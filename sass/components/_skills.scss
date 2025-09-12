@@ -1,0 +1,42 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  
+  &__group {
+    &-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: $themeClrPrimary;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 2px solid rgba($themeClrPrimary, 0.3);
+      padding-bottom: 0.5rem;
+    }
+    
+    &-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  }
+  
+  &__skill {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.4rem;
+    background: linear-gradient(135deg, rgba($themeClrPrimary, 0.1), rgba($themeClrPrimary, 0.05));
+    border: 1px solid rgba($themeClrPrimary, 0.2);
+    border-radius: $commonBorderRadius;
+    font-weight: 600;
+    color: #555;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background: linear-gradient(135deg, rgba($themeClrPrimary, 0.2), rgba($themeClrPrimary, 0.1));
+      border-color: rgba($themeClrPrimary, 0.4);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba($themeClrPrimary, 0.15);
+    }
+  }
+}
