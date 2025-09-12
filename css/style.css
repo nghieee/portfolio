@@ -871,6 +871,9 @@ textarea {
   gap: 1rem;
 }
 .skills__skill {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   padding: 0.8rem 1.5rem;
   font-size: 1.4rem;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05));
@@ -879,6 +882,11 @@ textarea {
   font-weight: 600;
   color: #555;
   transition: all 0.3s ease;
+}
+.skills__skill img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
 }
 .skills__skill:hover {
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
