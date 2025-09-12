@@ -14,8 +14,13 @@
         <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico" />
         <link rel="manifest" href="./assets/favicon/site.webmanifest" />
 
+        <!-- AOS CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!-- Main CSS -->
         <link rel="stylesheet" href="css/style.css" />
 
+        <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -81,43 +86,43 @@
         </header>
         <section class="home-hero">
             <div class="home-hero__content">
-                <h1 class="heading-primary">Hey, My name is Hieu Nguyen</h1>
-                <div class="home-hero__info">
+                <h1 class="heading-primary" data-aos="fade-down" data-aos-delay="100">Hey, My name is Hieu Nguyen</h1>
+                <div class="home-hero__info" data-aos="fade-up" data-aos-delay="300">
                     <p class="text-primary"></p>
                 </div>
-                <div class="home-hero__cta">
+                <div class="home-hero__cta" data-aos="fade-up" data-aos-delay="500">
                     <a href="./#projects" class="btn btn--bg">Projects</a>
                 </div>
             </div>
-            <div class="home-hero__socials">
+            <div class="home-hero__socials" data-aos="fade-left" data-aos-delay="700">
                 <div class="home-hero__social">
                     <a href="#" class="home-hero__social-icon-link">
-                        <img src="./assets/png/linkedin-ico.png" alt="icon" class="home-hero__social-icon" />
+                        <img src="./assets/png/linkedin-ico.png" alt="LinkedIn" class="home-hero__social-icon" />
                     </a>
                 </div>
                 <div class="home-hero__social">
                     <a href="#" class="home-hero__social-icon-link">
-                        <img src="./assets/png/github-ico.png" alt="icon" class="home-hero__social-icon" />
+                        <img src="./assets/png/github-ico.png" alt="GitHub" class="home-hero__social-icon" />
                     </a>
                 </div>
                 <div class="home-hero__social">
                     <a href="#" class="home-hero__social-icon-link home-hero__social-icon-link--bd-none">
-                        <img src="./assets/png/insta-ico.png" alt="icon" class="home-hero__social-icon" />
+                        <img src="./assets/png/insta-ico.png" alt="Instagram" class="home-hero__social-icon" />
                     </a>
                 </div>
             </div>
-            <div class="home-hero__mouse-scroll-cont">
+            <div class="home-hero__mouse-scroll-cont" data-aos="fade-up" data-aos-delay="900">
                 <div class="mouse"></div>
             </div>
         </section>
         <section id="about" class="about sec-pad">
             <div class="main-container">
-                <h2 class="heading heading-sec heading-sec__mb-med">
+                <h2 class="heading heading-sec heading-sec__mb-med" data-aos="fade-down">
                     <span class="heading-sec__main">About Me</span>
                     <span class="heading-sec__sub"> </span>
                 </h2>
                 <div class="about__content">
-                    <div class="about__content-main">
+                    <div class="about__content-main" data-aos="fade-right" data-aos-delay="200">
                         <h3 class="about__content-title">Get to know me!</h3>
                         <div class="about__content-details">
                             <p class="about__content-details-para">
@@ -133,95 +138,113 @@
                                 digital solutions.
                             </p>
                         </div>
-                        <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
+                        <a
+                            href="./#contact"
+                            class="btn btn--med btn--theme dynamicBgClr"
+                            data-aos="fade-up"
+                            data-aos-delay="400"
+                            >Contact</a
+                        >
                     </div>
                     <div class="about__content-skills">
-                        <h3 class="about__content-title">My Skills</h3>
-                        <div class="skills">
-                            <div class="skills__group">
+                        <h3 class="about__content-title" data-aos="fade-down" data-aos-duration="700">My Skills</h3>
+                        <div class="skills" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skills__group" data-aos="fade-up" data-aos-duration="800">
                                 <h4 class="skills__group-title">Frontend</h4>
                                 <div class="skills__group-items">
-                                    <div class="skills__skill">
+                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="100">
                                         <img
                                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                                            alt="HTML5"
                                         />
                                         HTML
                                     </div>
-                                    <div class="skills__skill">
+                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="180">
                                         <img
                                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                                            alt="CSS3"
                                         />
                                         CSS
                                     </div>
-                                    <div class="skills__skill">
+                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="260">
                                         <img
                                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                                            alt="JavaScript"
                                         />
                                         JavaScript
                                     </div>
-                                    <div class="skills__skill">
+                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="340">
                                         <img
                                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                                            alt="TypeScript"
                                         />
                                         TypeScript
                                     </div>
-                                    <div class="skills__skill">
+                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="420">
                                         <img
                                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                                            alt="React"
                                         />
                                         React
                                     </div>
-                                    <div class="skills__skill">
+                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="500">
                                         <img
                                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+                                            alt="Next.js"
                                         />
                                         Next.js
                                     </div>
-                                    <div class="skills__skill">
+                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="580">
                                         <img
                                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                                            alt="Bootstrap"
                                         />
                                         Bootstrap
                                     </div>
-                                    <div class="skills__skill">
+                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="660">
                                         <img
                                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                                            alt="Tailwind CSS"
                                         />
                                         Tailwind CSS
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="skills__group">
+                            <div class="skills__group" data-aos="fade-up" data-aos-duration="800" data-aos-delay="760">
                                 <h4 class="skills__group-title">Backend</h4>
                                 <div class="skills__group-items">
-                                    <div class="skills__skill">
+                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="840">
                                         <img
                                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+                                            alt="C#"
                                         />
                                         C#
                                     </div>
-                                    <div class="skills__skill">
+                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="920">
                                         <img
                                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg"
+                                            alt=".NET Core"
                                         />
                                         ASP.NET Core
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="skills__group">
+                            <div class="skills__group" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000">
                                 <h4 class="skills__group-title">Databases</h4>
                                 <div class="skills__group-items">
-                                    <div class="skills__skill">
+                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="1080">
                                         <img
                                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg"
+                                            alt="SQL Server"
                                         />
                                         SQL Server
                                     </div>
-                                    <div class="skills__skill">
+                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="1160">
                                         <img
                                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                                            alt="MySQL"
                                         />
                                         MySQL
                                     </div>
@@ -234,22 +257,22 @@
         </section>
         <section id="projects" class="projects sec-pad">
             <div class="main-container">
-                <h2 class="heading heading-sec heading-sec__mb-bg">
+                <h2 class="heading heading-sec heading-sec__mb-bg" data-aos="fade-down" data-aos-duration="700">
                     <span class="heading-sec__main">Projects</span>
                     <span class="heading-sec__sub"> </span>
                 </h2>
 
                 <div class="projects__content">
-                    <div class="projects__row">
-                        <div class="projects__row-img-cont">
+                    <div class="projects__row" data-aos="fade-up" data-aos-delay="150">
+                        <div class="projects__row-img-cont" data-aos="zoom-in" data-aos-delay="250">
                             <img
                                 src="./assets/png/uxuipj.png"
-                                alt="Software Screenshot"
+                                alt="E-wallet UI mockup"
                                 class="projects__row-img"
                                 loading="lazy"
                             />
                         </div>
-                        <div class="projects__row-content">
+                        <div class="projects__row-content" data-aos="fade-left" data-aos-delay="350">
                             <h3 class="projects__row-content-title">UI/UX Design – E‑Wallet</h3>
                             <p class="projects__row-content-desc">
                                 High‑fidelity Figma prototype for a digital wallet app: onboarding, top‑up, P2P
@@ -260,21 +283,22 @@
                                 href="https://www.figma.com/design/9tp5SwsR5R8zBxyeVweJE0/DoAnUX?node-id=0-1&t=NTjrpbJAcmg12x13-1"
                                 class="btn btn--med btn--theme dynamicBgClr"
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 >Figma</a
                             >
                         </div>
                     </div>
 
-                    <div class="projects__row">
-                        <div class="projects__row-img-cont">
+                    <div class="projects__row" data-aos="fade-up" data-aos-delay="450">
+                        <div class="projects__row-img-cont" data-aos="zoom-in" data-aos-delay="550">
                             <img
                                 src="./assets/png/longchau.png"
-                                alt="Software Screenshot"
+                                alt="E-commerce app screenshot"
                                 class="projects__row-img"
                                 loading="lazy"
                             />
                         </div>
-                        <div class="projects__row-content">
+                        <div class="projects__row-content" data-aos="fade-left" data-aos-delay="650">
                             <h3 class="projects__row-content-title">E‑commerce Web App</h3>
                             <p class="projects__row-content-desc">
                                 Full‑stack e‑commerce web app using ASP.NET Core 8 MVC, SQL Server, and EF Core,
@@ -286,6 +310,7 @@
                                 href="https://github.com/nghieee/doAnWebNC"
                                 class="btn btn--med btn--theme dynamicBgClr"
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 >Source</a
                             >
                         </div>
@@ -295,15 +320,21 @@
         </section>
         <section id="contact" class="contact sec-pad dynamicBg">
             <div class="main-container">
-                <h2 class="heading heading-sec heading-sec__mb-med">
+                <h2 class="heading heading-sec heading-sec__mb-med" data-aos="fade-down" data-aos-duration="700">
                     <span class="heading-sec__main heading-sec__main--lt">Contact</span>
                     <span class="heading-sec__sub heading-sec__sub--lt">
                         Feel free to reach out if you're looking for a developer, have a question, or just want to
                         connect. I'm always open to discussing new projects and opportunities.
                     </span>
                 </h2>
-                <div class="contact__form-container">
-                    <form action="https://formspree.io/f/xwpnzoav" method="POST" class="contact__form">
+                <div class="contact__form-container" data-aos="fade-up" data-aos-delay="200">
+                    <form
+                        action="https://formspree.io/f/xwpnzoav"
+                        method="POST"
+                        class="contact__form"
+                        data-aos="fade-up"
+                        data-aos-delay="350"
+                    >
                         <div class="contact__form-field">
                             <label class="contact__form-label" for="name">Name</label>
                             <input
@@ -351,13 +382,13 @@
                             <span>Social</span>
                         </h2>
                         <div class="main-footer__social-cont">
-                            <a target="_blank" rel="noreferrer" href="#">
+                            <a target="_blank" rel="noopener noreferrer" href="#">
                                 <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
                             </a>
-                            <a target="_blank" rel="noreferrer" href="#">
+                            <a target="_blank" rel="noopener noreferrer" href="#">
                                 <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
                             </a>
-                            <a target="_blank" rel="noreferrer" href="#">
+                            <a target="_blank" rel="noopener noreferrer" href="#">
                                 <img
                                     class="main-footer__icon main-footer__icon--mr-none"
                                     src="./assets/png/insta-ico.png"
@@ -377,11 +408,37 @@
 
                 <div class="main-footer__lower">
                     &copy; Copyright 2025. Made by
-                    <a rel="noreferrer" target="_blank" href="#">Hieu Nguyen</a>
+                    <a rel="noopener noreferrer" target="_blank" href="#">Hieu Nguyen</a>
                 </div>
             </div>
         </footer>
 
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 100,
+                duration: 700,
+                easing: "ease-out-cubic",
+                once: false,
+                mirror: true,
+                anchorPlacement: "top-bottom",
+                disable: "mobile",
+            });
+
+            // Refresh AOS when the window is resized
+            window.addEventListener("resize", () => {
+                AOS.refresh();
+            });
+
+            // Refresh AOS when scrolling starts
+            let scrollTimeout;
+            window.addEventListener("scroll", () => {
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(() => {
+                    AOS.refresh();
+                }, 100);
+            });
+        </script>
         <script src="./index.js"></script>
     </body>
 </html>
