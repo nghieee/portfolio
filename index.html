@@ -505,29 +505,38 @@
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-            AOS.init({
-                offset: 100,
-                duration: 700,
-                easing: "ease-out-cubic",
-                once: false,
-                mirror: true,
-                anchorPlacement: "top-bottom",
-                disable: "mobile",
-            });
+            (function () {
+                const isMobile = window.matchMedia("(max-width: 768px)").matches;
+                const aosOptions = {
+                    offset: isMobile ? 60 : 100,
+                    duration: isMobile ? 500 : 700,
+                    easing: "ease-out-cubic",
+                    once: false,
+                    mirror: true,
+                    anchorPlacement: "top-bottom",
+                    disable: false,
+                };
 
-            // Refresh AOS when the window is resized
-            window.addEventListener("resize", () => {
-                AOS.refresh();
-            });
+                AOS.init(aosOptions);
 
-            // Refresh AOS when scrolling starts
-            let scrollTimeout;
-            window.addEventListener("scroll", () => {
-                clearTimeout(scrollTimeout);
-                scrollTimeout = setTimeout(() => {
+                // Refresh AOS on resize and orientation change
+                window.addEventListener("resize", () => {
                     AOS.refresh();
-                }, 100);
-            });
+                });
+                window.addEventListener("orientationchange", () => {
+                    // small delay for orientation to settle
+                    setTimeout(() => AOS.refresh(), 250);
+                });
+
+                // Debounced refresh on scroll to keep animations synced
+                let scrollTimeout;
+                window.addEventListener("scroll", () => {
+                    clearTimeout(scrollTimeout);
+                    scrollTimeout = setTimeout(() => {
+                        AOS.refresh();
+                    }, 100);
+                });
+            })();
         </script>
         <script src="./index.js"></script>
     </body>

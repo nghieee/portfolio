@@ -991,7 +991,10 @@ textarea {
         gap: 2rem;
     }
     .certificate img {
-        height: 18rem;
+        height: auto;
+        max-height: 40vh;
+        object-fit: contain;
+        width: 100%;
     }
     .certificate__btn {
         position: static;
