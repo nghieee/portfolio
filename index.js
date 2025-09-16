@@ -77,3 +77,6 @@ function updateSocialLinks() {
 
 // Call the function when the document is loaded
 document.addEventListener("DOMContentLoaded", updateSocialLinks);
+
+// Certificate modal preview
+// Certificate modal removed — certificates now open in a new tab
