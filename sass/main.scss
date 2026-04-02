@@ -1,6 +1,6 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
-
+@import 'abstracts/design-tokens';
 
 @import 'base/base';
 
@@ -12,6 +12,7 @@
 @import 'components/header';
 @import 'components/footer';
 @import 'components/skills';
+@import 'components/certificates';
 @import 'components/mouse-scroll';
 
 

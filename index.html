@@ -4,8 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Hieu Nguyen</title>
-        <meta name="description" content="Portfolio Template for Developer" />
+        <title>Hieu Nguyen — DEV · MARKETER</title>
+        <meta
+            name="description"
+            content="Portfolio of Hieu Nguyen: full-stack development, growth, and product-focused digital work."
+        />
 
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
@@ -24,242 +27,541 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Source+Sans+Pro:wght@400;600;700;900&family=Syne:wght@600;700;800&display=swap"
             rel="stylesheet"
         />
     </head>
     <body>
-        <header class="header">
+        <header class="header" id="site-header">
             <div class="header__content">
-                <div class="header__logo-container">
-                    <div class="header__logo-img-cont">
-                        <img src="./assets/png/avt_ai.png" alt="Ram Maheshwari Logo Image" class="header__logo-img" />
+                <div class="header__inner">
+                    <div class="header__logo-container">
+                        <div class="header__logo-ring">
+                            <div class="header__logo-img-cont">
+                                <img src="./assets/png/avt_ai.png" alt="Hieu Nguyen" class="header__logo-img" />
+                            </div>
+                        </div>
+                        <div class="header__logo-text">
+                            <span class="header__logo-sub">Hieu Nguyen</span>
+                            <span class="header__logo-tag">DEV · MARKETER</span>
+                        </div>
                     </div>
-                    <span class="header__logo-sub">Hieu Nguyen</span>
-                </div>
-                <div class="header__main">
-                    <ul class="header__links">
-                        <li class="header__link-wrapper">
-                            <a href="./index.html" class="header__link"> Home </a>
-                        </li>
-                        <li class="header__link-wrapper">
-                            <a href="./index.html#about" class="header__link">About </a>
-                        </li>
-                        <li class="header__link-wrapper">
-                            <a href="./index.html#projects" class="header__link"> Projects </a>
-                        </li>
-                        <li class="header__link-wrapper">
-                            <a href="./index.html#contact" class="header__link"> Contact </a>
-                        </li>
-                    </ul>
-                    <div class="header__main-ham-menu-cont">
-                        <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-                        <img
-                            src="./assets/svg/ham-menu-close.svg"
-                            alt="hamburger menu close"
-                            class="header__main-ham-menu-close d-none"
-                        />
+                    <div class="header__main">
+                        <ul class="header__links">
+                            <li class="header__link-wrapper">
+                                <a href="./index.html" class="header__link">Home</a>
+                            </li>
+                            <li class="header__link-wrapper">
+                                <a href="./index.html#about" class="header__link">About</a>
+                            </li>
+                            <li class="header__link-wrapper">
+                                <a href="./index.html#projects" class="header__link">Projects</a>
+                            </li>
+                            <li class="header__link-wrapper">
+                                <a href="./index.html#certificates" class="header__link">Certificates</a>
+                            </li>
+                            <li class="header__link-wrapper">
+                                <a href="./index.html#contact" class="header__link">Contact</a>
+                            </li>
+                        </ul>
+                        <button
+                            type="button"
+                            class="header__ham-btn"
+                            aria-label="Open menu"
+                            aria-expanded="false"
+                            aria-controls="header-sm-menu"
+                        >
+                            <span class="header__ham-line"></span>
+                            <span class="header__ham-line"></span>
+                            <span class="header__ham-line"></span>
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="header__sm-menu">
+            <div class="header__sm-menu" id="header-sm-menu">
                 <div class="header__sm-menu-content">
                     <ul class="header__sm-menu-links">
                         <li class="header__sm-menu-link">
-                            <a href="./index.html"> Home </a>
+                            <a href="./index.html">Home</a>
                         </li>
-
                         <li class="header__sm-menu-link">
-                            <a href="./index.html#about"> About </a>
+                            <a href="./index.html#about">About</a>
                         </li>
-
                         <li class="header__sm-menu-link">
-                            <a href="./index.html#projects"> Projects </a>
+                            <a href="./index.html#projects">Projects</a>
                         </li>
-
                         <li class="header__sm-menu-link">
-                            <a href="./index.html#contact"> Contact </a>
+                            <a href="./index.html#certificates">Certificates</a>
+                        </li>
+                        <li class="header__sm-menu-link">
+                            <a href="./index.html#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </header>
-        <section class="home-hero">
-            <div class="home-hero__content">
-                <h1 class="heading-primary" data-aos="fade-down" data-aos-delay="100">Hi, My name is Hieu Nguyen</h1>
-                <div class="home-hero__info" data-aos="fade-up" data-aos-delay="300">
-                    <p class="text-primary">
-                        Full-stack developer — React, Next.js, ASP.NET Core. I build user-friendly web apps.
-                    </p>
-                    <p class="text-primary">
-                        I focus on clean UI, maintainable code, and shipping features that users love.
-                    </p>
-                    <p class="text-primary">Currently open to internships and junior roles. View my resume below.</p>
+        <section class="home-hero" id="home-hero">
+            <div class="home-hero__vignette" aria-hidden="true"></div>
+            <canvas class="home-hero__frame-canvas" id="hero-babylon" aria-hidden="true"></canvas>
+            <div class="home-hero__stage">
+                <div class="home-hero__grid">
+                    <div class="home-hero__copy">
+                        <h1 class="home-hero__title" data-aos="fade-up" data-aos-duration="900">
+                            <span class="home-hero__title-line">Build products that work.</span>
+                            <span class="home-hero__title-line">
+                                <span class="home-hero__title-accent">Grow stories that convert.</span>
+                            </span>
+                        </h1>
+                        <p class="home-hero__tag" data-aos="fade-up" data-aos-delay="120" data-aos-duration="700">
+                            Hieu Nguyen · DEV · MARKETER
+                        </p>
+                        <div class="home-hero__mini-cta" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
+                            <a
+                                href="./assets/pdf/FullStackDeveloper_HieuNguyen.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="home-hero__mini-link home-hero__mini-link--fill"
+                                >Developer CV</a
+                            >
+                            <a
+                                href="./assets/pdf/Marketer_HieuNguyen.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="home-hero__mini-link"
+                                >Marketer CV</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="home-hero__media">
+                        <div class="home-hero__photo-floor" aria-hidden="true"></div>
+                        <img
+                            src="./assets/png/about/7ffd40e5-1ec5-4cac-9d64-5d4fcb8f1187.jpg"
+                            alt="Hieu Nguyen"
+                            class="home-hero__photo"
+                            loading="eager"
+                        />
+                    </div>
                 </div>
-                <div class="home-hero__cta" data-aos="fade-up" data-aos-delay="500">
-                    <a
-                        href="./assets/pdf/FullStackDeveloper_HieuNguyen.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn btn--bg"
-                        >Resume</a
-                    >
-                </div>
-            </div>
-            <div class="home-hero__socials" data-aos="fade-left" data-aos-delay="700">
-                <div class="home-hero__social">
-                    <a href="#" class="home-hero__social-icon-link">
-                        <img src="./assets/png/linkedin-ico.png" alt="LinkedIn" class="home-hero__social-icon" />
-                    </a>
-                </div>
-                <div class="home-hero__social">
-                    <a href="#" class="home-hero__social-icon-link">
-                        <img src="./assets/png/github-ico.png" alt="GitHub" class="home-hero__social-icon" />
-                    </a>
-                </div>
-                <div class="home-hero__social">
-                    <a href="#" class="home-hero__social-icon-link home-hero__social-icon-link--bd-none">
-                        <img src="./assets/png/insta-ico.png" alt="Instagram" class="home-hero__social-icon" />
-                    </a>
-                </div>
-            </div>
-            <div class="home-hero__mouse-scroll-cont">
-                <div class="mouse"></div>
             </div>
         </section>
-        <section id="about" class="about sec-pad">
-            <div class="main-container">
-                <h2 class="heading heading-sec heading-sec__mb-med" data-aos="fade-down">
-                    <span class="heading-sec__main">About Me</span>
-                    <span class="heading-sec__sub"> </span>
-                </h2>
-                <div class="about__content">
-                    <div class="about__content-main" data-aos="fade-right" data-aos-delay="200">
-                        <h3 class="about__content-title">Get to know me!</h3>
-                        <div class="about__content-details">
-                            <p class="about__content-details-para">
-                                I am a final-year Software Engineering student with a strong passion for building web
-                                applications. My focus is on full-stack web development, where I enjoy working across
-                                both frontend and backend to create products that are not only functional but also
-                                user-friendly.
-                            </p>
-                            <p class="about__content-details-para">
-                                I am a fast learner, detail-oriented, and always open to feedback — qualities that help
-                                me adapt quickly and grow continuously. My goal is to start my career in web development
-                                by taking on challenging internship opportunities and turning ideas into impactful
-                                digital solutions.
-                            </p>
+        <section id="about" class="about about--creative sec-pad">
+            <div class="about__bg" aria-hidden="true">
+                <span class="about__orb about__orb--1"></span>
+                <span class="about__orb about__orb--2"></span>
+                <span class="about__orb about__orb--3"></span>
+            </div>
+            <div class="main-container about__container">
+                <header class="about__head">
+                    <p class="about__kicker">About</p>
+                    <h2 class="about__title">
+                        Two lenses,
+                        <span class="about__title-gradient">one goal</span>
+                    </h2>
+                    <p class="about__lead">
+                        Final-year Software Engineering student: I ship full-stack web products and care equally about
+                        how they reach the right audience—through content, channels, and data.
+                    </p>
+                </header>
+
+                <div class="about__marquee" aria-hidden="true">
+                    <div class="about__marquee-mask">
+                        <div class="about__marquee-track">
+                            <span>React</span><span>Next.js</span><span>ASP.NET</span><span>TypeScript</span
+                            ><span>SEO</span><span>Content</span><span>Figma</span><span>Analytics</span
+                            ><span>UI/UX</span><span>Growth</span><span>SQL</span><span>SignalR</span
+                            ><span>React</span><span>Next.js</span><span>ASP.NET</span><span>TypeScript</span
+                            ><span>SEO</span><span>Content</span><span>Figma</span><span>Analytics</span
+                            ><span>UI/UX</span><span>Growth</span><span>SQL</span><span>SignalR</span>
                         </div>
-                        <a
-                            href="./#contact"
-                            class="btn btn--med btn--theme dynamicBgClr"
-                            data-aos="fade-up"
-                            data-aos-delay="400"
-                            >Contact</a
-                        >
                     </div>
-                    <div class="about__content-skills">
-                        <h3 class="about__content-title" data-aos="fade-down" data-aos-duration="700">My Skills</h3>
-                        <div class="skills" data-aos="fade-up" data-aos-delay="100">
-                            <div class="skills__group" data-aos="fade-up" data-aos-duration="800">
-                                <h4 class="skills__group-title">Frontend</h4>
-                                <div class="skills__group-items">
-                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="100">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                                            alt="HTML5"
-                                        />
-                                        HTML
+                </div>
+
+                <!-- Portrait: assets/png/about/avt.png — Icons: Devicon + Simple Icons (CDN) -->
+                <div class="about__bento">
+                    <div class="about__photo-showcase">
+                        <header class="about__photo-head">
+                            <p class="about__photo-kicker">Portrait</p>
+                            <h3 class="about__photo-title">One frame, the full story</h3>
+                        </header>
+                        <div class="about__photo-stage">
+                            <div class="about__photo-deco" aria-hidden="true">
+                                <span class="about__photo-deco-sheet about__photo-deco-sheet--1"></span>
+                                <span class="about__photo-deco-sheet about__photo-deco-sheet--2"></span>
+                            </div>
+                            <figure class="about__polaroid about-reveal" aria-label="Portrait of Hieu Nguyen">
+                                <div class="about__polaroid-body">
+                                    <div class="about__polaroid-inner">
+                                        <div class="about__polaroid-vignette" aria-hidden="true"></div>
+                                        <div class="about__polaroid-grain" aria-hidden="true"></div>
+                                        <div class="about__polaroid-scanlines" aria-hidden="true"></div>
+                                        <div class="about__polaroid-corners" aria-hidden="true">
+                                            <span></span><span></span><span></span><span></span>
+                                        </div>
+                                        <div class="about__polaroid-img-wrap">
+                                            <img
+                                                src="./assets/png/about/avt.png"
+                                                alt="Hieu Nguyen"
+                                                class="about__polaroid-img"
+                                                width="720"
+                                                height="720"
+                                                loading="lazy"
+                                            />
+                                        </div>
                                     </div>
-                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="180">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-                                            alt="CSS3"
-                                        />
-                                        CSS
-                                    </div>
-                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="260">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                                            alt="JavaScript"
-                                        />
-                                        JavaScript
-                                    </div>
-                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="340">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-                                            alt="TypeScript"
-                                        />
-                                        TypeScript
-                                    </div>
-                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="420">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-                                            alt="React"
-                                        />
-                                        React
-                                    </div>
-                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="500">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
-                                            alt="Next.js"
-                                        />
-                                        Next.js
-                                    </div>
-                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="580">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
-                                            alt="Bootstrap"
-                                        />
-                                        Bootstrap
-                                    </div>
-                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="660">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-                                            alt="Tailwind CSS"
-                                        />
-                                        Tailwind CSS
+                                    <div class="about__polaroid-caption">
+                                        <span class="about__polaroid-name">Hieu Nguyen</span>
+                                        <span class="about__polaroid-meta">DEV · MARKETER · analog mood</span>
                                     </div>
                                 </div>
-                            </div>
+                            </figure>
+                        </div>
+                    </div>
 
-                            <div class="skills__group" data-aos="fade-up" data-aos-duration="800" data-aos-delay="760">
-                                <h4 class="skills__group-title">Backend</h4>
-                                <div class="skills__group-items">
-                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="840">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
-                                            alt="C#"
-                                        />
-                                        C#
-                                    </div>
-                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="920">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg"
-                                            alt=".NET Core"
-                                        />
-                                        ASP.NET Core
-                                    </div>
+                    <div class="about__stories">
+                        <article class="about__story about__story--dev about-reveal">
+                            <span class="about__story-tag">Engineering</span>
+                            <h3 class="about__story-title">Build</h3>
+                            <p class="about__story-text">
+                                React, Next.js, C#, and ASP.NET Core—clear features, maintainable code, and dependable UX.
+                                I learn fast, sweat the details, and welcome constructive feedback.
+                            </p>
+                        </article>
+                        <article class="about__story about__story--mkt about-reveal">
+                            <span class="about__story-tag about__story-tag--mkt">Marketer</span>
+                            <h3 class="about__story-title">Tell</h3>
+                            <p class="about__story-text">
+                                Funnels, messaging, and content so users grasp product value. I pair analytics and
+                                experimentation with storytelling and Figma—one thread from build to tell.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="about__panel about__panel--skills about-reveal">
+                        <div class="about__skills-head">
+                            <div>
+                                <h3 class="about__skills-title">Stack &amp; tools</h3>
+                                <p class="about-stack__hint">
+                                    Tool icons via
+                                    <a href="https://devicon.dev" target="_blank" rel="noopener noreferrer">Devicon</a>
+                                    (engineering) and
+                                    <a
+                                        href="https://simpleicons.org/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Simple Icons</a
+                                    >
+                                    (growth).
+                                </p>
+                            </div>
+                            <a href="./#contact" class="btn btn--med btn--theme about__skills-cta dynamicBgClr"
+                                >Contact</a
+                            >
+                        </div>
+
+                        <div class="about-stack">
+                            <div class="about-stack__cols">
+                                <div class="about-stack__col">
+                                    <p class="about-stack__col-label">Code &amp; systems</p>
+
+                                    <section class="about-stack__layer" aria-label="Frontend">
+                                        <h4 class="about-stack__layer-title">
+                                            <span class="about-stack__layer-dot about-stack__layer-dot--fe"></span>
+                                            Frontend
+                                        </h4>
+                                        <div class="about-stack__chips">
+                                            <div class="about-stack__chip">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">HTML</span>
+                                            </div>
+                                            <div class="about-stack__chip">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">CSS</span>
+                                            </div>
+                                            <div class="about-stack__chip">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">JavaScript</span>
+                                            </div>
+                                            <div class="about-stack__chip">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">TypeScript</span>
+                                            </div>
+                                            <div class="about-stack__chip">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">React</span>
+                                            </div>
+                                            <div class="about-stack__chip">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">Next.js</span>
+                                            </div>
+                                            <div class="about-stack__chip">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">Bootstrap</span>
+                                            </div>
+                                            <div class="about-stack__chip">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">Tailwind</span>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="about-stack__layer" aria-label="Backend">
+                                        <h4 class="about-stack__layer-title">
+                                            <span class="about-stack__layer-dot about-stack__layer-dot--be"></span>
+                                            Backend
+                                        </h4>
+                                        <div class="about-stack__chips">
+                                            <div class="about-stack__chip">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">C#</span>
+                                            </div>
+                                            <div class="about-stack__chip">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">ASP.NET Core</span>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="about-stack__layer" aria-label="Databases">
+                                        <h4 class="about-stack__layer-title">
+                                            <span class="about-stack__layer-dot about-stack__layer-dot--db"></span>
+                                            Databases
+                                        </h4>
+                                        <div class="about-stack__chips">
+                                            <div class="about-stack__chip">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">SQL Server</span>
+                                            </div>
+                                            <div class="about-stack__chip">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">MySQL</span>
+                                            </div>
+                                        </div>
+                                    </section>
                                 </div>
-                            </div>
 
-                            <div class="skills__group" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000">
-                                <h4 class="skills__group-title">Databases</h4>
-                                <div class="skills__group-items">
-                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="1080">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg"
-                                            alt="SQL Server"
-                                        />
-                                        SQL Server
-                                    </div>
-                                    <div class="skills__skill" data-aos="zoom-in" data-aos-delay="1160">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
-                                            alt="MySQL"
-                                        />
-                                        MySQL
-                                    </div>
+                                <div class="about-stack__col about-stack__col--mkt">
+                                    <p class="about-stack__col-label">Growth &amp; creative</p>
+                                    <section class="about-stack__layer" aria-label="Marketing skills">
+                                        <h4 class="about-stack__layer-title">
+                                            <span class="about-stack__layer-dot about-stack__layer-dot--mkt"></span>
+                                            Strategy &amp; channels
+                                        </h4>
+                                        <div class="about-stack__chips about-stack__chips--mkt">
+                                            <div class="about-stack__chip about-stack__chip--mkt">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlesearchconsole.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">SEO / SEM</span>
+                                            </div>
+                                            <div class="about-stack__chip about-stack__chip--mkt">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/medium.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">Content</span>
+                                            </div>
+                                            <div class="about-stack__chip about-stack__chip--mkt">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/meta.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">Social &amp; paid</span>
+                                            </div>
+                                            <div class="about-stack__chip about-stack__chip--mkt">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googleanalytics.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">Analytics</span>
+                                            </div>
+                                            <div class="about-stack__chip about-stack__chip--mkt">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/figma.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">Figma / UI</span>
+                                            </div>
+                                            <div class="about-stack__chip about-stack__chip--mkt">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googletagmanager.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">A/B &amp; funnel</span>
+                                            </div>
+                                            <div class="about-stack__chip about-stack__chip--mkt">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/canva.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">Brand voice</span>
+                                            </div>
+                                            <div class="about-stack__chip about-stack__chip--mkt">
+                                                <span class="about-stack__chip-glow" aria-hidden="true"></span>
+                                                <span class="about-stack__chip-icon"
+                                                    ><img
+                                                        src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/hubspot.svg"
+                                                        alt=""
+                                                        width="36"
+                                                        height="36"
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                /></span>
+                                                <span class="about-stack__chip-name">Email / CRM</span>
+                                            </div>
+                                        </div>
+                                    </section>
                                 </div>
                             </div>
                         </div>
@@ -330,179 +632,425 @@
                 </div>
             </div>
         </section>
-        <!-- Certificates -->
-        <section id="certificates" class="certificates sec-pad">
+        <!-- Certificates — lab / proof wall -->
+        <section id="certificates" class="certificates certificates--lab sec-pad">
+            <div class="certificates__bg" aria-hidden="true">
+                <span class="certificates__orb certificates__orb--1"></span>
+                <span class="certificates__orb certificates__orb--2"></span>
+                <span class="certificates__orb certificates__orb--3"></span>
+            </div>
             <div class="main-container">
-                <h2 class="heading heading-sec heading-sec__mb-med" data-aos="fade-down" data-aos-duration="700">
-                    <span class="heading-sec__main">Certificates</span>
-                </h2>
-
-                <div class="certificates__grid" data-aos="fade-up" data-aos-delay="150">
-                    <div class="certificate" data-aos="zoom-in" data-aos-delay="250">
-                        <img
-                            src="./assets/png/certificate/Coursera 7GL4DBEQ7JF5-1.png"
-                            alt="Coursera certificate 1"
-                            loading="lazy"
-                        />
-                        <div class="certificate__meta">
-                            <div class="certificate__title">Google AI Essentials</div>
-                            <a
-                                class="btn btn--med btn--theme certificate__btn"
-                                href="https://www.coursera.org/account/accomplishments/verify/7GL4DBEQ7JF5"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >Show credential</a
-                            >
-                        </div>
+                <div
+                    class="certificates__ticker"
+                    aria-hidden="true"
+                    data-aos="fade-in"
+                    data-aos-duration="500"
+                >
+                    <div class="certificates__ticker-track">
+                        <span>VERIFY</span><span>·</span><span>SHIP</span><span>·</span><span>LEARN</span
+                        ><span>·</span><span>MEASURE</span><span>·</span><span>DESIGN</span><span>·</span
+                        ><span>ITERATE</span><span>·</span><span>VERIFY</span><span>·</span><span>SHIP</span
+                        ><span>·</span><span>LEARN</span><span>·</span><span>MEASURE</span><span>·</span
+                        ><span>DESIGN</span><span>·</span><span>ITERATE</span><span>·</span><span>VERIFY</span
+                        ><span>·</span><span>SHIP</span><span>·</span><span>LEARN</span><span>·</span
+                        ><span>MEASURE</span><span>·</span><span>DESIGN</span><span>·</span><span>ITERATE</span>
                     </div>
+                </div>
 
-                    <div class="certificate" data-aos="zoom-in" data-aos-delay="350">
-                        <img
-                            src="./assets/png/certificate/Coursera RUFAUF4FCZWQ-1.png"
-                            alt="Coursera certificate 2"
-                            loading="lazy"
-                        />
-                        <div class="certificate__meta">
-                            <div class="certificate__title">Blockchain Basics</div>
-                            <a
-                                class="btn btn--med btn--theme certificate__btn"
-                                href="https://www.coursera.org/account/accomplishments/verify/RUFAUF4FCZWQ"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >Show credential</a
+                <div class="certificates__hero">
+                    <header class="certificates__head">
+                        <p class="certificates__kicker" data-aos="fade-right" data-aos-duration="600">Proof of work</p>
+                        <h2 class="certificates__title" data-aos="fade-up" data-aos-delay="60" data-aos-duration="700">
+                            <span class="certificates__title-line">Learning with</span>
+                            <span class="certificates__title-line"
+                                ><span class="certificates__title-accent">proof.</span></span
                             >
+                        </h2>
+                        <p class="certificates__lead" data-aos="fade-up" data-aos-delay="120" data-aos-duration="600">
+                            Front-end, growth, and software—documented with verifiable credentials. This is the lab
+                            wall: experiment, validate, iterate.
+                        </p>
+                    </header>
+                    <aside class="certificates__stats" data-aos="fade-left" data-aos-delay="100" data-aos-duration="650">
+                        <div class="certificates__stat">
+                            <div class="certificates__stat-val">05</div>
+                            <div class="certificates__stat-label">Verified items</div>
                         </div>
-                    </div>
+                        <div class="certificates__stat">
+                            <div class="certificates__stat-val">02</div>
+                            <div class="certificates__stat-label">Platforms</div>
+                        </div>
+                        <div class="certificates__roles">
+                            <span class="certificates__role certificates__role--dev">Code</span>
+                            <span class="certificates__role certificates__role--mkt">Growth</span>
+                            <span class="certificates__role certificates__role--design">Design</span>
+                        </div>
+                    </aside>
+                </div>
 
-                    <div class="certificate" data-aos="zoom-in" data-aos-delay="450">
-                        <img
-                            src="./assets/png/certificate/Coursera Z16LS3K631VF-1.png"
-                            alt="Coursera certificate 3"
-                            loading="lazy"
-                        />
-                        <div class="certificate__meta">
-                            <div class="certificate__title">Google Prompting Essentials</div>
-                            <a
-                                class="btn btn--med btn--theme certificate__btn"
-                                href="https://www.coursera.org/account/accomplishments/verify/Z16LS3K631VF"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >Show credential</a
-                            >
-                        </div>
-                    </div>
+                <!-- Credentials: “admission ticket” showcase — bento + holographic edge -->
+                <div class="certificates__showcase" aria-label="Credentials">
+                    <div class="certificates__showcase-bg" aria-hidden="true"></div>
+                    <div class="certificates__ticket-grid">
+                        <article
+                            class="cert-ticket cert-ticket--coursera cert-ticket--xl"
+                            data-aos="zoom-in-up"
+                            data-aos-delay="40"
+                            data-aos-duration="750"
+                        >
+                            <div class="cert-ticket__edge" aria-hidden="true"></div>
+                            <div class="cert-ticket__holo" aria-hidden="true"></div>
+                            <header class="cert-ticket__stub">
+                                <span class="cert-ticket__n">01</span>
+                                <span class="cert-ticket__tag" title="Professional Certificate">PRO</span>
+                            </header>
+                            <div class="cert-ticket__perforation" aria-hidden="true"></div>
+                            <div class="cert-ticket__body">
+                                <div class="cert-ticket__visual">
+                                    <img
+                                        src="./assets/png/certificate/Coursera DP1V65OP87VZ-1.png"
+                                        alt="Professional Certificate Google Digital Marketing &amp; E-commerce (Coursera)"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div class="cert-ticket__copy">
+                                    <p class="cert-ticket__issuer">Coursera · Professional Certificate</p>
+                                    <h3 class="cert-ticket__title">Google Digital Marketing &amp; E-commerce</h3>
+                                    <div class="cert-ticket__barcode" aria-hidden="true"></div>
+                                    <a
+                                        class="cert-ticket__cta"
+                                        href="https://www.coursera.org/account/accomplishments/professional-cert/DP1V65OP87VZ"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >View credential <span class="cert-ticket__cta-arrow">↗</span></a
+                                    >
+                                </div>
+                            </div>
+                            <span class="cert-ticket__stamp" aria-hidden="true">verified</span>
+                        </article>
 
-                    <div class="certificate" data-aos="zoom-in" data-aos-delay="550">
-                        <img
-                            src="./assets/png/certificate/sql_basic certificate-1.png"
-                            alt="SQL Basic certificate"
-                            loading="lazy"
-                        />
-                        <div class="certificate__meta">
-                            <div class="certificate__title">SQL (Basic) Certificate</div>
-                            <a
-                                class="btn btn--med btn--theme certificate__btn"
-                                href="https://www.hackerrank.com/certificates/f88404258a63"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >Show credential</a
-                            >
-                        </div>
+                        <article
+                            class="cert-ticket cert-ticket--coursera"
+                            data-aos="zoom-in-up"
+                            data-aos-delay="80"
+                            data-aos-duration="700"
+                        >
+                            <div class="cert-ticket__edge" aria-hidden="true"></div>
+                            <div class="cert-ticket__holo" aria-hidden="true"></div>
+                            <header class="cert-ticket__stub">
+                                <span class="cert-ticket__n">02</span>
+                            </header>
+                            <div class="cert-ticket__perforation" aria-hidden="true"></div>
+                            <div class="cert-ticket__body">
+                                <div class="cert-ticket__visual">
+                                    <img
+                                        src="./assets/png/certificate/Coursera 7GL4DBEQ7JF5-1.png"
+                                        alt="Coursera certificate: Google AI Essentials"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div class="cert-ticket__copy">
+                                    <p class="cert-ticket__issuer">Coursera · Course</p>
+                                    <h3 class="cert-ticket__title">Google AI Essentials</h3>
+                                    <div class="cert-ticket__barcode" aria-hidden="true"></div>
+                                    <a
+                                        class="cert-ticket__cta"
+                                        href="https://www.coursera.org/account/accomplishments/verify/7GL4DBEQ7JF5"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >View credential <span class="cert-ticket__cta-arrow">↗</span></a
+                                    >
+                                </div>
+                            </div>
+                            <span class="cert-ticket__stamp" aria-hidden="true">verified</span>
+                        </article>
+
+                        <article
+                            class="cert-ticket cert-ticket--coursera"
+                            data-aos="zoom-in-up"
+                            data-aos-delay="120"
+                            data-aos-duration="700"
+                        >
+                            <div class="cert-ticket__edge" aria-hidden="true"></div>
+                            <div class="cert-ticket__holo" aria-hidden="true"></div>
+                            <header class="cert-ticket__stub">
+                                <span class="cert-ticket__n">03</span>
+                            </header>
+                            <div class="cert-ticket__perforation" aria-hidden="true"></div>
+                            <div class="cert-ticket__body">
+                                <div class="cert-ticket__visual">
+                                    <img
+                                        src="./assets/png/certificate/Coursera RUFAUF4FCZWQ-1.png"
+                                        alt="Coursera certificate: Blockchain Basics"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div class="cert-ticket__copy">
+                                    <p class="cert-ticket__issuer">Coursera · Course</p>
+                                    <h3 class="cert-ticket__title">Blockchain Basics</h3>
+                                    <div class="cert-ticket__barcode" aria-hidden="true"></div>
+                                    <a
+                                        class="cert-ticket__cta"
+                                        href="https://www.coursera.org/account/accomplishments/verify/RUFAUF4FCZWQ"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >View credential <span class="cert-ticket__cta-arrow">↗</span></a
+                                    >
+                                </div>
+                            </div>
+                            <span class="cert-ticket__stamp" aria-hidden="true">verified</span>
+                        </article>
+
+                        <article
+                            class="cert-ticket cert-ticket--coursera"
+                            data-aos="zoom-in-up"
+                            data-aos-delay="160"
+                            data-aos-duration="700"
+                        >
+                            <div class="cert-ticket__edge" aria-hidden="true"></div>
+                            <div class="cert-ticket__holo" aria-hidden="true"></div>
+                            <header class="cert-ticket__stub">
+                                <span class="cert-ticket__n">04</span>
+                            </header>
+                            <div class="cert-ticket__perforation" aria-hidden="true"></div>
+                            <div class="cert-ticket__body">
+                                <div class="cert-ticket__visual">
+                                    <img
+                                        src="./assets/png/certificate/Coursera Z16LS3K631VF-1.png"
+                                        alt="Coursera certificate: Google Prompting Essentials"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div class="cert-ticket__copy">
+                                    <p class="cert-ticket__issuer">Coursera · Course</p>
+                                    <h3 class="cert-ticket__title">Google Prompting Essentials</h3>
+                                    <div class="cert-ticket__barcode" aria-hidden="true"></div>
+                                    <a
+                                        class="cert-ticket__cta"
+                                        href="https://www.coursera.org/account/accomplishments/verify/Z16LS3K631VF"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >View credential <span class="cert-ticket__cta-arrow">↗</span></a
+                                    >
+                                </div>
+                            </div>
+                            <span class="cert-ticket__stamp" aria-hidden="true">verified</span>
+                        </article>
+
+                        <article
+                            class="cert-ticket cert-ticket--hackerrank"
+                            data-aos="zoom-in-up"
+                            data-aos-delay="200"
+                            data-aos-duration="700"
+                        >
+                            <div class="cert-ticket__edge" aria-hidden="true"></div>
+                            <div class="cert-ticket__holo" aria-hidden="true"></div>
+                            <header class="cert-ticket__stub">
+                                <span class="cert-ticket__n">05</span>
+                            </header>
+                            <div class="cert-ticket__perforation" aria-hidden="true"></div>
+                            <div class="cert-ticket__body">
+                                <div class="cert-ticket__visual">
+                                    <img
+                                        src="./assets/png/certificate/sql_basic certificate-1.png"
+                                        alt="HackerRank certificate: SQL (Basic)"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div class="cert-ticket__copy">
+                                    <p class="cert-ticket__issuer">HackerRank · Skills</p>
+                                    <h3 class="cert-ticket__title">SQL (Basic) Certificate</h3>
+                                    <div class="cert-ticket__barcode" aria-hidden="true"></div>
+                                    <a
+                                        class="cert-ticket__cta"
+                                        href="https://www.hackerrank.com/certificates/f88404258a63"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >View credential <span class="cert-ticket__cta-arrow">↗</span></a
+                                    >
+                                </div>
+                            </div>
+                            <span class="cert-ticket__stamp" aria-hidden="true">verified</span>
+                        </article>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact" class="contact sec-pad dynamicBg">
-            <div class="main-container">
-                <h2 class="heading heading-sec heading-sec__mb-med" data-aos="fade-down" data-aos-duration="700">
-                    <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-                    <span class="heading-sec__sub heading-sec__sub--lt">
-                        Feel free to reach out if you're looking for a developer, have a question, or just want to
-                        connect. I'm always open to discussing new projects and opportunities.
-                    </span>
-                </h2>
-                <div class="contact__form-container" data-aos="fade-up" data-aos-delay="200">
-                    <form
-                        action="https://formspree.io/f/xwpnzoav"
-                        method="POST"
-                        class="contact__form"
-                        data-aos="fade-up"
-                        data-aos-delay="350"
-                    >
-                        <div class="contact__form-field">
-                            <label class="contact__form-label" for="name">Name</label>
-                            <input
-                                required
-                                placeholder="Enter Your Name"
-                                type="text"
-                                class="contact__form-input"
-                                name="name"
-                                id="name"
-                            />
+        <section id="contact" class="contact contact--flux sec-pad">
+            <div class="contact__bg" aria-hidden="true">
+                <span class="contact__orb contact__orb--1"></span>
+                <span class="contact__orb contact__orb--2"></span>
+                <span class="contact__noise" aria-hidden="true"></span>
+            </div>
+            <div class="contact__shell">
+                <aside class="contact__rail contact__rail--left" aria-hidden="true">
+                    <div class="contact__rail-mask">
+                        <div class="contact__rail-track contact__rail-track--up">
+                            <div class="contact__rail-block">
+                                <p class="contact__rail-line">Build products that work.</p>
+                                <p class="contact__rail-line contact__rail-line--accent">Grow stories that convert.</p>
+                            </div>
+                            <div class="contact__rail-block">
+                                <p class="contact__rail-line">Build products that work.</p>
+                                <p class="contact__rail-line contact__rail-line--accent">Grow stories that convert.</p>
+                            </div>
                         </div>
-                        <div class="contact__form-field">
-                            <label class="contact__form-label" for="email">Email</label>
-                            <input
-                                required
-                                placeholder="Enter Your Email"
-                                type="email"
-                                class="contact__form-input"
-                                name="email"
-                                id="email"
-                            />
+                    </div>
+                </aside>
+                <div class="contact__shell-main">
+                    <div class="main-container contact__wrap">
+                        <div class="contact__split">
+                            <header class="contact__intro" data-aos="fade-right" data-aos-duration="700">
+                                <p class="contact__kicker">Open channel</p>
+                                <h2 class="contact__title">
+                                    <span class="contact__title-line">Always open —</span>
+                                    <span class="contact__title-line contact__title-line--accent">drop a line.</span>
+                                </h2>
+                                <p class="contact__lede">
+                                    Briefs, links, or short questions are welcome. I read every message and reply with
+                                    intent—no spam.
+                                </p>
+                                <p class="contact__hint">Submitted via Formspree · typical response within 24–48 hours.</p>
+                            </header>
+
+                            <div class="contact__panel" data-aos="fade-left" data-aos-delay="120" data-aos-duration="750">
+                                <div class="contact__panel-glare" aria-hidden="true"></div>
+                                <form
+                                    action="https://formspree.io/f/xwpnzoav"
+                                    method="POST"
+                                    class="contact__form"
+                                    id="contact-form"
+                                >
+                                    <div class="contact__field">
+                                        <label class="contact__label" for="name">Name</label>
+                                        <input
+                                            required
+                                            type="text"
+                                            name="name"
+                                            id="name"
+                                            class="contact__input"
+                                            placeholder=" "
+                                            autocomplete="name"
+                                        />
+                                    </div>
+                                    <div class="contact__field">
+                                        <label class="contact__label" for="email">Email</label>
+                                        <input
+                                            required
+                                            type="email"
+                                            name="email"
+                                            id="email"
+                                            class="contact__input"
+                                            placeholder=" "
+                                            autocomplete="email"
+                                        />
+                                    </div>
+                                    <div class="contact__field contact__field--grow">
+                                        <label class="contact__label" for="message">Message</label>
+                                        <textarea
+                                            required
+                                            name="message"
+                                            id="message"
+                                            class="contact__input contact__input--area"
+                                            rows="5"
+                                            placeholder=" "
+                                        ></textarea>
+                                    </div>
+                                    <button type="submit" class="contact__submit">
+                                        <span class="contact__submit-text">Send message</span>
+                                        <span class="contact__submit-icon" aria-hidden="true">→</span>
+                                    </button>
+                                </form>
+                            </div>
                         </div>
-                        <div class="contact__form-field">
-                            <label class="contact__form-label" for="message">Message</label>
-                            <textarea
-                                required
-                                cols="30"
-                                rows="10"
-                                class="contact__form-input"
-                                placeholder="Enter Your Message"
-                                name="message"
-                                id="message"
-                            ></textarea>
-                        </div>
-                        <button type="submit" class="btn btn--theme contact__btn">Submit</button>
-                    </form>
+                    </div>
                 </div>
+                <aside class="contact__rail contact__rail--right" aria-hidden="true">
+                    <div class="contact__rail-mask">
+                        <div class="contact__rail-track contact__rail-track--down">
+                            <div class="contact__rail-block">
+                                <p class="contact__rail-line">Build products that work.</p>
+                                <p class="contact__rail-line contact__rail-line--accent">Grow stories that convert.</p>
+                            </div>
+                            <div class="contact__rail-block">
+                                <p class="contact__rail-line">Build products that work.</p>
+                                <p class="contact__rail-line contact__rail-line--accent">Grow stories that convert.</p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </section>
         <footer class="main-footer">
-            <div class="main-container">
-                <div class="main-footer__upper">
-                    <div class="main-footer__row main-footer__row-1">
-                        <h2 class="heading heading-sm main-footer__heading-sm">
-                            <span>Social</span>
-                        </h2>
-                        <div class="main-footer__social-cont">
-                            <a target="_blank" rel="noopener noreferrer" href="#">
-                                <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
-                            </a>
-                            <a target="_blank" rel="noopener noreferrer" href="#">
-                                <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
-                            </a>
-                            <a target="_blank" rel="noopener noreferrer" href="#">
-                                <img
-                                    class="main-footer__icon main-footer__icon--mr-none"
-                                    src="./assets/png/insta-ico.png"
-                                    alt="icon"
-                                />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="main-footer__row main-footer__row-2">
-                        <h4 class="heading heading-sm text-lt">HIEU NGUYEN</h4>
-                        <p class="main-footer__short-desc">
-                            A passionate Software Engineering student specializing in full-stack web development.
-                            Building digital solutions with modern technologies and user-centered design.
+            <div class="main-footer__bg" aria-hidden="true">
+                <span class="main-footer__orb main-footer__orb--1"></span>
+                <span class="main-footer__orb main-footer__orb--2"></span>
+                <span class="main-footer__noise"></span>
+            </div>
+            <div class="main-container main-footer__inner">
+                <div class="main-footer__top">
+                    <div class="main-footer__brand">
+                        <a href="./index.html" class="main-footer__name-link">
+                            <span class="main-footer__name">Hieu Nguyen</span>
+                            <span class="main-footer__role">DEV · MARKETER</span>
+                        </a>
+                        <p class="main-footer__tagline">
+                            Full-stack development and growth: from code to narrative, one objective—products that reach
+                            the right people.
                         </p>
                     </div>
+                    <nav class="main-footer__nav" aria-label="Footer navigation">
+                        <p class="main-footer__label">Menu</p>
+                        <ul class="main-footer__links">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./index.html#about">About</a></li>
+                            <li><a href="./index.html#projects">Projects</a></li>
+                            <li><a href="./index.html#certificates">Certificates</a></li>
+                            <li><a href="./index.html#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="main-footer__social">
+                        <p class="main-footer__label">Connect</p>
+                        <ul class="main-footer__social-list">
+                            <li>
+                                <a
+                                    class="main-footer__social-link"
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="LinkedIn"
+                                >
+                                    <img src="./assets/png/linkedin-ico.png" alt="" width="28" height="28" />
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    class="main-footer__social-link"
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="GitHub"
+                                >
+                                    <img src="./assets/png/github-ico.png" alt="" width="28" height="28" />
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    class="main-footer__social-link"
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Instagram"
+                                >
+                                    <img src="./assets/png/insta-ico.png" alt="" width="28" height="28" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="main-footer__lower">
-                    &copy; Copyright 2025. Made by
-                    <a rel="noopener noreferrer" target="_blank" href="#">Hieu Nguyen</a>
+                <div class="main-footer__bar">
+                    <p class="main-footer__copy">© 2026 Hieu Nguyen. All rights reserved.</p>
+                    <a href="./index.html#contact" class="main-footer__cta">Get in touch →</a>
                 </div>
             </div>
         </footer>
@@ -542,6 +1090,8 @@
                 });
             })();
         </script>
+        <script src="https://cdn.babylonjs.com/babylon.js"></script>
+        <script src="./js/hero-frame-babylon.js"></script>
         <script src="./index.js"></script>
     </body>
 </html>

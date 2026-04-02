@@ -4,6 +4,33 @@
     gap: 3.5rem;
     padding: 1rem 0;
 
+    &--compact {
+        gap: 2.2rem;
+        padding: 0;
+
+        .skills__group-title {
+            font-size: 1.65rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .skills__group-items {
+            gap: 0.9rem;
+        }
+
+        .skills__skill {
+            padding: 0.75rem 1.25rem;
+            font-size: 1.35rem;
+            min-width: 0;
+            gap: 0.9rem;
+
+            img {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+
     &__group {
         &-title {
             font-size: 2rem;

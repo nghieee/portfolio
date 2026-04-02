@@ -30,12 +30,14 @@ html {
 body {
   box-sizing: border-box;
   position: relative;
-  line-height: 1.5;
-  font-family: sans-serif;
+  line-height: 1.55;
   overflow-x: hidden;
   overflow-y: scroll;
-  font-family: 'Source Sans Pro', sans-serif;
-  
+  font-family: 'DM Sans', sans-serif;
+  background: var(--page-bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {

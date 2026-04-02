@@ -123,12 +123,26 @@
     box-shadow: none;
     padding: calc(1.5rem - 2px) calc(5rem - 2px);
   }
+
+  &--hero-outline {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.55);
+    box-shadow: none;
+    padding: calc(1.5rem - 2px) calc(4rem - 2px);
+    font-size: 2rem;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.85);
+    }
+  }
 }
 
 .sec-pad {
-  padding: 12rem 0;
+  padding: 14rem 0;
   @include respond(tab-port) {
-    padding: 8rem 0;
+    padding: 9rem 0;
   }
 }
 

@@ -1,0 +1,16 @@
+// Design tokens — portfolio “Editorial Noir”
+:root {
+  --page-bg: #050508;
+  --page-elevated: #0c0e14;
+  --text-primary: #f1f5f9;
+  --text-muted: rgba(226, 232, 240, 0.55);
+  --stroke-hairline: rgba(255, 255, 255, 0.08);
+  --stroke-accent: rgba(56, 189, 248, 0.35);
+  --glow-cyan: rgba(56, 189, 248, 0.12);
+  --glow-rose: rgba(244, 114, 182, 0.1);
+  --gradient-brand: linear-gradient(105deg, #38bdf8 0%, #f472b6 45%, #a78bfa 100%);
+  --radius-pill: 999px;
+  --radius-panel: 1.6rem;
+  --shadow-float: 0 24px 64px rgba(0, 0, 0, 0.45);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
