@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" fill="none">
+  <defs>
+    <linearGradient id="dgb" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" style="stop-color:#0f111a"/>
+      <stop offset="100%" style="stop-color:#151528"/>
+    </linearGradient>
+    <radialGradient id="dglow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:rgba(88,101,242,0.35)"/>
+      <stop offset="70%" style="stop-color:transparent"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38bdf8"/>
+      <stop offset="100%" style="stop-color:#5865f2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" rx="28" fill="url(#dgb)"/>
+  <circle cx="600" cy="320" r="320" fill="url(#dglow)"/>
+  <rect x="48" y="48" width="1104" height="654" rx="20" stroke="rgba(88,101,242,0.25)" stroke-width="2"/>
+  <rect x="96" y="480" width="1008" height="6" rx="3" fill="url(#line)" opacity="0.5"/>
+  <text x="96" y="130" fill="#f8fafc" font-family="system-ui, Segoe UI, sans-serif" font-size="36" font-weight="700">Crypto community</text>
+  <text x="96" y="178" fill="rgba(226,232,240,0.55)" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="500">Airdrop research · market insight</text>
+  <g opacity="0.9">
+    <rect x="96" y="240" width="280" height="88" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+    <rect x="96" y="352" width="360" height="88" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+    <rect x="96" y="464" width="240" height="88" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+  </g>
+</svg>
