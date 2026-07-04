@@ -94,10 +94,6 @@
             </div>
         </div>
     </header>
-    <div class="story-canvas-wrap" aria-hidden="true">
-        <canvas id="scroll-story-canvas"></canvas>
-    </div>
-    <main class="story-main" id="story-main">
         <section class="home-hero" id="home-hero">
             <div class="home-hero__vignette" aria-hidden="true"></div>
             <canvas class="home-hero__frame-canvas" id="hero-babylon" aria-hidden="true"></canvas>
@@ -778,7 +774,6 @@
                 </aside>
             </div>
         </section>
-    </main>
     <footer class="main-footer">
         <div class="main-footer__bg" aria-hidden="true">
             <span class="main-footer__orb main-footer__orb--1"></span>
@@ -849,10 +844,7 @@
                 once: false,
                 mirror: true,
                 anchorPlacement: "top-bottom",
-                // Desktop + motion: GSAP ScrollTrigger drives scroll story — avoid transform fights with AOS
-                disable: () =>
-                    window.matchMedia("(min-width: 901px)").matches &&
-                    !window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+                disable: false,
             };
 
             AOS.init(aosOptions);
@@ -876,11 +868,6 @@
             });
         })();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="./js/scroll-story.js"></script>
     <script src="https://cdn.babylonjs.com/babylon.js"></script>
     <script src="./js/hero-frame-babylon.js"></script>
     <script src="./index.js"></script>
