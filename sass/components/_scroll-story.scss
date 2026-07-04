@@ -1,0 +1,210 @@
+// Scroll narrative v2 — canvas + orbit ring + left beacon (Lenis + GSAP + Three in JS)
+
+.story-canvas-wrap {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+
+  canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+  }
+}
+
+.story-main {
+  position: relative;
+  z-index: 1;
+}
+
+.main-footer {
+  position: relative;
+  z-index: 2;
+}
+
+// --- Desktop narrative chrome ---
+body.scroll-story-active {
+  // Conic progress ring (top-right)
+  .story-orbit {
+    position: fixed;
+    top: max(1.2rem, env(safe-area-inset-top));
+    right: max(1.2rem, env(safe-area-inset-right));
+    z-index: 60;
+    width: 4.2rem;
+    height: 4.2rem;
+    pointer-events: none;
+  }
+
+  .story-orbit__disc {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    --p: 0;
+    background: conic-gradient(
+      from -90deg,
+      rgba(56, 189, 248, 0.95) calc(var(--p) * 360deg),
+      rgba(255, 255, 255, 0.07) 0
+    );
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px));
+    mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px));
+    box-shadow: 0 0 28px rgba(56, 189, 248, 0.15);
+  }
+
+  // Vertical chapter beacon (left)
+  .story-beacon {
+    position: fixed;
+    top: 50%;
+    left: max(1rem, env(safe-area-inset-left));
+    z-index: 55;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+    pointer-events: auto;
+  }
+
+  .story-beacon__btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.45rem 0.65rem 0.45rem 0.45rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(6, 8, 14, 0.55);
+    color: rgba(226, 232, 240, 0.55);
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition:
+      border-color 0.25s ease,
+      box-shadow 0.25s ease,
+      color 0.25s ease,
+      transform 0.25s ease;
+
+    &:focus-visible {
+      outline: 2px solid rgba(244, 114, 182, 0.85);
+      outline-offset: 3px;
+    }
+  }
+
+  .story-beacon__ix {
+    font-family: 'Syne', sans-serif;
+    font-weight: 900;
+    font-size: 1.15rem;
+    letter-spacing: 0.04em;
+    min-width: 2.4rem;
+    text-align: center;
+    color: rgba(148, 163, 184, 0.85);
+  }
+
+  .story-beacon__name {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition:
+      max-width 0.35s ease,
+      opacity 0.25s ease;
+  }
+
+  .story-beacon__btn:hover .story-beacon__name,
+  .story-beacon__btn:focus-visible .story-beacon__name,
+  .story-beacon__btn.is-active .story-beacon__name {
+    max-width: 12rem;
+    opacity: 1;
+  }
+
+  .story-beacon__btn.is-active {
+    color: rgba(248, 250, 252, 0.95);
+    border-color: rgba(244, 114, 182, 0.45);
+    box-shadow: 0 0 22px rgba(244, 114, 182, 0.18);
+
+    .story-beacon__ix {
+      color: #fda4af;
+    }
+  }
+
+  .story-beacon__btn:hover {
+    border-color: rgba(56, 189, 248, 0.35);
+    transform: translateX(2px);
+  }
+}
+
+// Projects: horizontal strip only when narrative is active (desktop)
+@media (min-width: 901px) {
+  body.scroll-story-active #projects .projects__story-scene {
+    position: relative;
+    z-index: 1;
+    min-height: min(100vh, 100dvh);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  body.scroll-story-active #projects .projects__shell {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  body.scroll-story-active #projects .projects__h-strap {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  body.scroll-story-active #projects .projects__grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    width: max-content;
+    max-width: none;
+    gap: 2.4rem;
+    margin: 0;
+    will-change: transform;
+  }
+
+  body.scroll-story-active #projects .projects-card {
+    flex: 0 0 clamp(28rem, 68vw, 46rem);
+    width: clamp(28rem, 68vw, 46rem);
+    max-width: none;
+    min-height: min(52rem, 72vh);
+  }
+
+  body.scroll-story-active #projects .projects-card--featured,
+  body.scroll-story-active #projects .projects-card--side,
+  body.scroll-story-active #projects .projects-card--wide,
+  body.scroll-story-active #projects .projects-card--featured2 {
+    grid-column: auto !important;
+  }
+
+  body.scroll-story-active #projects .projects__head {
+    margin-bottom: 2.4rem;
+  }
+}
+
+@media (max-width: 900px), (prefers-reduced-motion: reduce) {
+  .story-orbit,
+  .story-beacon {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .story-canvas-wrap {
+    display: none;
+  }
+}
